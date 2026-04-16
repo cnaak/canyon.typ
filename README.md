@@ -4,15 +4,20 @@ Canyon (`canyon-0.1.0`) is a stencil book template that puts users in _full cont
 
 Typical Typst templates are written so as to bring functionality; however, that frequently comes
 at the cost of introducing (i) new syntax and (ii) opaque template-side code and settings.
-Canyon explores a different approach in which a new Canyon-based document is a book stencil that
+Canyon explores a different approach in which a new canyon-based document is a book stencil that
 users can freely edit and adapt, with _no_ opaque template-side code or settings.
 
-Canyon users have access to _all_ document settings—metadata, configuration, elements,
-etc.—as if they had manually started writing the document from scratch on their own (except they hadn't!—and thus have full access to everything in that project.
+Canyon users have access to _all_ document settings—such as: metadata, configuration,
+elements—as if they had manually started writing the document from scratch on their own (except
+they hadn't!—and thus have full access to everything in that project.
+
+## Example
+
+Out-of-the box, a canyon book looks like this
 
 ## Canyon Workflows
 
-Moreover, Canyon neatly separates settings from contents, thus enabling book-writing workflow
+Moreover, canyon neatly separates settings from contents, thus enabling book-writing workflow
 that can be as basic as:
 
 - Quickly editing `SETUP/META.typ` for document _metadata_: title, author, keywords, and the
