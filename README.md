@@ -52,8 +52,8 @@ canyon-package:
   type: web
   author: Naaktgeboren, C.
   title:
-    value: "Canyon: Book template in Typst with users in full control"
-    short: "Canyon: Book template in Typst"
+    value: "Canyon: A user-in-full-control typst book template"
+    short: "Canyon: A typst book template"
   url: https://github.com/cnaak/canyon.typ
   version: 0.1.0
   date: 2026-04-16
