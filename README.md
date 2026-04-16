@@ -44,31 +44,42 @@ A _selection_ of canyon book pages using default settings are grouped in the thu
 
 ## Canyon Workflows
 
-Moreover, canyon neatly separates settings from contents, thus enabling book-writing workflow
-that can be as basic as:
+Owing to its full customization and separation of concepts approach, canyon enables simple
+book-writing workflows, which can be as basic as:
 
-- Quickly editing `SETUP/META.typ` for document _metadata_: title, author, keywords, and the
-  like;
+### The Basic (i) Metadata and (v) Contents
 
-- Being up and running for book (i) front-matter, (ii) body, and (iii) back-matter content
-  creation;
+*Workflow:*
 
-Optionally, user can also:
+- Quickly editing `SETUP/META.typ` for document _metadata_;
+- Replacing the image placeholders with your actual cover/chapter art;
+- Being up and running for book content creation and adaptation (add/delete sections).
 
-- Edit `SETUP/CONFIG.typ` for quickly setting _general_ document _configurations_ such as:
-  language, paper and text sizes, and a _few_ font and color selections;
+The end-result will look like the thumbnail with your artwork, metadata, and contents.
 
-- Edit `SETUP/ELEMENTS.typ` for _fine-grained_ element _customizations_ such as: (i) typst
+### Including General (ii) Configuration:
+
+*Workflow:*
+
+- Basic workflow with:
+- Quickly setting general document _configurations_ on `SETUP/CONFIG.typ`;
+- Editing `__setup.typ` files in the `1-FRONT`, `2-BODY`, and `3-BACK` template stencil
+  directories to finely control how these book matters components are displayed.
+
+The end-result will have custom language/paper/sections/text size/fonts and broad color scheme.
+
+### Including Fine-Grained (iii) Element Customizations:
+
+*Workflow:*
+
+- General configuration workflow with:
+- Editing `SETUP/ELEMENTS.typ` for fine-grained element _customizations_ such as: (i) typst
   native `page`, `par`, `text`, and `block` ones; and (ii) custom canyon elemens, such as:
   `exhibit` (for code listings, examples, etc.), and `problem` (for textbooks); or even (iii)
   create your own custom element types;
 
-Canyon also offers convenient (i) front-, (ii) body, and (iii) back-matter setups through the
-`__setup.typ` files in the `1-FRONT`, `2-BODY`, and `3-BACK` template stencil directories, which
-allows for quick and easy (i) _application_ of styles, and (ii) _re-ordering_, _removing_, and
-_adding_ of sectionswith complete freedom, thus allowing for far more flexible, high-level
-document preparation than show-rule-based templates can achieve, while allowing for the maximum
-extent of fine-tuning allowable by typst.
+The end-result can be a highly customized book, than can bear little resemblance to the default
+canyon book style, hopefully achieved without too much pain.
 
 ## Release Summary
 
