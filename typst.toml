@@ -1,0 +1,23 @@
+[package]
+name = "canyon"
+version = "0.1.0"
+entrypoint = "canyon.typ"
+authors = ["Naaktgeboren, C.", ]
+license = "MIT"
+description = "A user-in-full-control typst book template"
+repository = "https://github.com/cnaak/canyon.typ"
+keywords = [
+    "versatile",
+    "customized",
+    "book",
+    "front-matter",
+    "body",
+    "back-matter",
+    "textbook",
+    "exhibit",
+    "problem",
+]
+categories = ["model", "scripting"]
+disciplines = []
+compiler = "0.14"
+exclude = []
