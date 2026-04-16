@@ -33,7 +33,7 @@ Out-of-the-box canyon books come with the following:
 1. A simple and configurable 3-color system with: (i) a thematic color, (ii) a page background
    color, and (iii) a cover text color.
 
-Thus, selected default canyon book pages look like this:
+Thus, a _selection_ of default-settings canyon book pages are grouped in the thumbnail below:
 
 ![thumbnail](https://raw.githubusercontent.com/cnaak/canyon.typ/refs/heads/dev/thumbnail.png)
 
