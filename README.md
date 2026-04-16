@@ -20,7 +20,7 @@ Out-of-the-box canyon books come with the following:
 1. (i) Front-matter; (ii) single-part Body; and (iii) Back-matter book structure;
 1. (i) Cover page, and (ii) numbered Chapter page images;
 1. All `#set` and `#show` rules are accessible; hence, customizable;
-1. The `openright` chapter pagination;
+1. The "openright" chapter pagination—through `#pagebreak(to: "odd")`;
 1. Front-matter with Title pages; Credits; Contents; List of Figures, Tables, Equations, and
    Exhibits; and a Preface;
 1. Book body with regular Chapters;
