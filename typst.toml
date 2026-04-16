@@ -7,6 +7,7 @@ license = "MIT"
 description = "A user-in-full-control typst book template"
 repository = "https://github.com/cnaak/canyon.typ"
 keywords = [
+    "full control",
     "versatile",
     "customized",
     "book",
@@ -20,7 +21,9 @@ keywords = [
 categories = ["model", "scripting"]
 disciplines = []
 compiler = "0.14.0"
-exclude = []
+exclude = [
+    "thumbnail.png",
+]
 
 [template]
 path = "stencil"
