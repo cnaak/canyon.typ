@@ -21,9 +21,7 @@ keywords = [
 categories = ["model", "scripting"]
 disciplines = []
 compiler = "0.14.0"
-exclude = [
-    "thumbnail.png",
-]
+exclude = []
 
 [template]
 path = "stencil"
