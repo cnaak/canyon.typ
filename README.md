@@ -36,9 +36,11 @@ Out-of-the-box canyon books come with the following:
 
 A _selection_ of canyon book pages using default settings are grouped in the thumbnail below:
 
-![thumbnail](https://raw.githubusercontent.com/cnaak/canyon.typ/refs/heads/dev/thumbnail.png){: .centered}
-
-
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/cnaak/canyon.typ/refs/heads/dev/thumbnail.png"
+    alt="thumbnail">
+</p>
 
 ## Canyon Workflows
 
