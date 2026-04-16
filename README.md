@@ -68,7 +68,7 @@ The end-result will look like the thumbnail with your artwork, metadata, and con
 
 The end-result will have custom language/paper/sections/text size/fonts and broad color scheme.
 
-### Including Fine-Grained (iii) Element Customizations:
+### Including Fine-Grained (iii) Element and (iv) Layout Customizations:
 
 *Workflow:*
 
