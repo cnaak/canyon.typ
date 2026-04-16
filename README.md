@@ -31,7 +31,7 @@ Out-of-the-box canyon books come with the following:
    `1`, with configurable separators by type _group_, i.e., a separate one for:  (i) Equations,
    (ii) Figures and Tables, (iii) Exhibits, and (iv) Problems;
 1. A simple and configurable 3-color system with: (i) a thematic color (default: _dark indigo_),
-   (ii) a page background color (default: _sepia_), and (iii) a cover text color (default:
+   (ii) a page background color (default: _light sepia_), and (iii) a cover text color (default:
    _light canary_).
 
 A _selection_ of canyon book pages using default settings are grouped in the thumbnail below:
