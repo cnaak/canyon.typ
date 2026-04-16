@@ -13,7 +13,9 @@ they hadn't!—and thus have full access to everything in that project.
 
 ## Example
 
-Out-of-the box, a canyon book looks like this
+Out-of-the box, a selection of canyon book pages looks like this:
+
+![thumbnail](https://raw.githubusercontent.com/cnaak/canyon.typ/refs/heads/dev/thumbnail.png)
 
 ## Canyon Workflows
 
