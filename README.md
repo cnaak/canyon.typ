@@ -11,7 +11,22 @@ Canyon users have access to _all_ document settings—such as: metadata, configu
 elements—as if they had manually started writing the document from scratch on their own (except
 they hadn't!—and thus have full access to everything in that project.
 
-## Example
+## Overview
+
+Everything in canyon can be customized, and out-of-the-box canyon books come with the following:
+
+1. (i) Front-, one-part (i) body, and (iii) back-matter book structure;
+1. Separate images for (i) cover, and (ii) numbered chapter pages;
+1. `openright` chapter pagination;
+1. Front-matter with 2 Title pages; Credits; Contents; List of Figures, Tables, Equations, and
+   Exhibits; and a Preface;
+1. Book body with regular Chapters;
+1. Back-matter with Appendix, Bibliography, Glossary, Index, and Discalimers;
+1. Separation of (i) metadata, (ii) configuration, (iii) elements, (iv) layout, and (v) contents
+   concepts;
+1. Figures, Tables, Exhibits, Problems, and Equations are Chapter-numbered: `1.1` instead of
+   `1` with custom separators by type _group_, i.e., (i) Equations, (ii) Figures and Tables,
+   (iii) Exhibits, and (iv) Problems;
 
 Out-of-the box, a selection of canyon book pages looks like this:
 
