@@ -16,11 +16,11 @@
     // body of text (main font), use a serif family
     body: "EB Garamond",
     // variant serif font for other elements
-    serif: "Crimson Pro",
+    serif: "Libertinus Serif",
     // small element font: footnote mark/entry, captions, etc.
     details: "Libertinus Serif",
     // sans font
-    sans: "Noto Sans",
+    sans: "Libertinus Sans",
     // mono font
     mono: "Inconsolata",
   ),
