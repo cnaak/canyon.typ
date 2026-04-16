@@ -30,12 +30,15 @@ Out-of-the-box canyon books come with the following:
 1. Figures, Tables, Exhibits, Problems, and Equations are Chapter-numbered: `1.1` instead of
    `1`, with configurable separators by type _group_, i.e., a separate one for:  (i) Equations,
    (ii) Figures and Tables, (iii) Exhibits, and (iv) Problems;
-1. A simple and configurable 3-color system with: (i) a thematic color, (ii) a page background
-   color, and (iii) a cover text color.
+1. A simple and configurable 3-color system with: (i) a thematic color (default: _dark indigo_),
+   (ii) a page background color (default: _sepia_), and (iii) a cover text color (default:
+   _light canary_).
 
-Thus, a _selection_ of default-settings canyon book pages are grouped in the thumbnail below:
+A _selection_ of canyon book pages using default settings are grouped in the thumbnail below:
 
 ![thumbnail](https://raw.githubusercontent.com/cnaak/canyon.typ/refs/heads/dev/thumbnail.png)
+
+
 
 ## Canyon Workflows
 
