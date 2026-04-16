@@ -1,7 +1,7 @@
 [package]
 name = "canyon"
 version = "0.1.0"
-entrypoint = "canyon.typ"
+entrypoint = "lib.typ"
 authors = ["Naaktgeboren, C.", ]
 license = "MIT"
 description = "A user-in-full-control typst book template"
@@ -21,3 +21,8 @@ categories = ["model", "scripting"]
 disciplines = []
 compiler = "0.14.0"
 exclude = []
+
+[template]
+path = "stencil"
+entrypoint = "canyon.typ"
+thumbnail = "thumbnail.png"
