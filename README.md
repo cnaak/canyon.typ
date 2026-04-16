@@ -8,7 +8,7 @@ Canyon explores a different approach in which a new Canyon-based document is a b
 users can freely edit and adapt, with _no_ opaque template-side code or settings.
 
 Canyon users have access to _all_ document settings—metadata, configuration, elements,
-etc.—as if they had manually started writing the document from scratch on their own (except they hadn't!), and thus have full access to everything in that project.
+etc.—as if they had manually started writing the document from scratch on their own (except they hadn't!—and thus have full access to everything in that project.
 
 ## Canyon Workflows
 
