@@ -13,22 +13,27 @@ they hadn't!—and thus have full access to everything in that project.
 
 ## Overview
 
-Everything in canyon can be customized, and out-of-the-box canyon books come with the following:
+_Everything_ in canyon can be customized as far as allowed in Typst.
 
-1. (i) Front-, one-part (i) body, and (iii) back-matter book structure;
-1. Separate images for (i) cover, and (ii) numbered chapter pages;
-1. `openright` chapter pagination;
-1. Front-matter with 2 Title pages; Credits; Contents; List of Figures, Tables, Equations, and
+Out-of-the-box canyon books come with the following:
+
+1. (i) Front-matter; (ii) single-part Body; and (iii) Back-matter book structure;
+1. (i) Cover page, and (ii) numbered Chapter page images;
+1. All `#set` and `#show` rules are accessible; hence, customizable;
+1. The `openright` chapter pagination;
+1. Front-matter with Title pages; Credits; Contents; List of Figures, Tables, Equations, and
    Exhibits; and a Preface;
 1. Book body with regular Chapters;
 1. Back-matter with Appendix, Bibliography, Glossary, Index, and Discalimers;
-1. Separation of (i) metadata, (ii) configuration, (iii) elements, (iv) layout, and (v) contents
-   concepts;
+1. Separation of concepts for (i) metadata, (ii) configuration, (iii) elements, (iv) layout, and
+   (v) contents;
 1. Figures, Tables, Exhibits, Problems, and Equations are Chapter-numbered: `1.1` instead of
-   `1` with custom separators by type _group_, i.e., (i) Equations, (ii) Figures and Tables,
-   (iii) Exhibits, and (iv) Problems;
+   `1`, with configurable separators by type _group_, i.e., a separate one for:  (i) Equations,
+   (ii) Figures and Tables, (iii) Exhibits, and (iv) Problems;
+1. A simple and configurable 3-color system with: (i) a thematic color, (ii) a page background
+   color, and (iii) a cover text color.
 
-Out-of-the box, a selection of canyon book pages looks like this:
+Thus, selected default canyon book pages look like this:
 
 ![thumbnail](https://raw.githubusercontent.com/cnaak/canyon.typ/refs/heads/dev/thumbnail.png)
 
