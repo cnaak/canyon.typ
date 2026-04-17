@@ -173,7 +173,7 @@
   // larger than normal by 6 notches ×(∜2⁶ ~ 283%)
   size: resized(+7),
   weight: "black",
-  fill: CONFIG.color.cover,
+  fill: CONFIG.color.cover.darken(40%),
   hyphenate: false,
 ))
 
