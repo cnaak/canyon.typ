@@ -36,7 +36,7 @@ Out-of-the-box canyon books come with the following:
    (ii) Figures and Tables, (iii) Exhibits, and (iv) Problems;
 1. A simple and configurable 3-color system with: (i) a thematic color (default: _dark indigo_),
    (ii) a page background color (default: _light sepia_), and (iii) a cover text color (default:
-   _light canary_).
+   _dark indigo_).
 
 A _selection_ of canyon book pages using default settings are grouped in the thumbnail below:
 
@@ -52,19 +52,19 @@ book-writing workflows, which can be as basic as:
 *Workflow:*
 
 - Quickly editing `SETUP/META.typ` for document _metadata_;
-- Replacing the image placeholders with your actual cover/chapter art;
-- Being up and running for book content creation and adaptation (add/delete sections).
+- Replacing the image placeholders on `SETUP/ELEMENTS.typ` with your actual cover/chapter art `RES/<images>`;
+- Being up and running for book content `2-BODY/<chapters>` creation and adaptation.
 
 The end-result will look like the thumbnail with your artwork, metadata, and contents.
 
-### Including General (ii) Configuration:
+### Including General (ii) Configuration
 
 *Workflow:*
 
 - Basic workflow with:
 - Quickly setting general document _configurations_ on `SETUP/CONFIG.typ`;
 - Editing `__setup.typ` files in the `1-FRONT`, `2-BODY`, and `3-BACK` template stencil
-  directories to finely control how these book matters components are displayed.
+  directories to finely control how these broad book sections components are displayed.
 
 The end-result will have custom language/paper/sections/text size/fonts and broad color scheme.
 
@@ -73,10 +73,10 @@ The end-result will have custom language/paper/sections/text size/fonts and broa
 *Workflow:*
 
 - General configuration workflow with:
-- Editing `SETUP/ELEMENTS.typ` for fine-grained element _customizations_ such as: (i) typst
-  native `page`, `par`, `text`, and `block` ones; and (ii) custom canyon elemens, such as:
-  `exhibit` (for code listings, examples, etc.), and `problem` (for textbooks); or even (iii)
-  create your own custom element types;
+- Editing `SETUP/ELEMENTS.typ` for fine-grained element _customizations_ such as: (i) the set of
+  typst native `page`, `par`, `text`, and `block` elements; and (ii) custom `canyon` elemens,
+  such as: `exhibit` (for code listings, examples, etc.), and `problem` (for textbooks); or even
+  (iii) creating your own custom element types;
 
 The end-result can be a highly customized book, than can bear little resemblance to the default
 canyon book style, hopefully achieved without too much pain.
