@@ -20,7 +20,7 @@
     // small element font: footnote mark/entry, captions, etc.
     details: "Libertinus Serif",
     // sans font
-    sans: "Libertinus Sans",
+    sans: "Fira Sans",
     // mono font
     mono: "Inconsolata",
   ),
