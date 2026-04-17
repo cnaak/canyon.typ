@@ -30,7 +30,7 @@
     // page - page backgroung, usually opaque sepia or white
     pages: color.hsv( 50deg,  18%, 100%, 100%), // sepia
     // cover - text foreground, adjust according to cover art
-    theme: color.hsv(240deg,  75%,  33%, 100%), // dark indigo,
+    cover: color.hsv(240deg,  75%,  33%, 100%), // dark indigo,
   ),
   num-sep: (
     eqn: ".", // for equation (1.1)
