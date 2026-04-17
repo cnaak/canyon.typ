@@ -174,6 +174,7 @@
   size: resized(+7),
   weight: "black",
   fill: CONFIG.color.cover,
+  hyphenate: false,
 ))
 
 #ELEM.text.insert("title", ELEM.text.half-title + (
