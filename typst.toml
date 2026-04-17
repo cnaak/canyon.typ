@@ -4,7 +4,7 @@ version = "0.1.0"
 entrypoint = "lib.typ"
 authors = ["Naaktgeboren, C.", ]
 license = "MIT"
-description = "A user-in-full-control typst book template"
+description = "A Book Template That Puts You in Full Control"
 repository = "https://github.com/cnaak/canyon.typ"
 keywords = [
     "full control",
@@ -18,7 +18,7 @@ keywords = [
     "exhibit",
     "problem",
 ]
-categories = ["model", "scripting"]
+categories = ["layout", "book"]
 disciplines = []
 compiler = "0.14.0"
 exclude = []
