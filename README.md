@@ -1,19 +1,21 @@
-# Canyon: A user-in-full-control typst book template
+# Canyon: A Book Template for End User in Full Control
 
-Canyon (`canyon-0.1.0`) is a stencil book template that puts users in _full control_.
+Canyon (`canyon-0.1.0`) is a stencil book template that puts end users in _full control_.
 
-Typical Typst templates are written so as to bring functionality; however, that frequently comes
-at the cost of introducing (i) new syntax and (ii) opaque template-side code and settings.
+Mainstream typst templates are written so as to bring functionality and to be used in an
+`#import` / `#show`  workflow; however, that frequently comes at the cost of introducing (i) new
+syntax and (ii) opaque template-side code and settings.
+
 Canyon explores a different approach in which a new canyon-based document is a book stencil that
-users can freely edit and adapt, with _no_ opaque template-side code or settings.
+users can freely edit and adapt, with _no_ opaque template-side code or settings,
+canyon-specific `#import` statements, and canyon-specialized `#show` rules; instead, the
+familiar typst syntax.
 
-Canyon users have access to _all_ document settings—such as: metadata, configuration,
+Therefore, canyon users have access to _all_ document settings—such as: metadata, configuration,
 elements—as if they had manually started writing the document from scratch on their own (except
-they hadn't!—and thus have full access to everything in that project.
+they hadn't!—and thus have _full access to everything typst_ in that project.
 
 ## Overview
-
-_Everything_ in canyon can be customized as far as allowed in Typst.
 
 Out-of-the-box canyon books come with the following:
 
@@ -90,8 +92,8 @@ canyon-package:
   type: web
   author: Naaktgeboren, C.
   title:
-    value: "Canyon: A user-in-full-control typst book template"
-    short: "Canyon: A typst book template"
+    value: "Canyon: A Book Template for End User in Full Control"
+    short: "Canyon: A Book Template"
   url: https://github.com/cnaak/canyon.typ
   version: 0.1.0
   date: 2026-04-16
