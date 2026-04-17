@@ -42,7 +42,7 @@ A _selection_ of canyon book pages using default settings are grouped in the thu
 
 ![Selection of canyon pages thumbnail](https://raw.githubusercontent.com/cnaak/canyon.typ/refs/heads/dev/thumbnail.png)
 
-## Canyon Workflows
+## Suggested Canyon Workflows
 
 Owing to its full customization and separation of concepts approach, canyon enables simple
 book-writing workflows, which can be as basic as:
