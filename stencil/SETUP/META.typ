@@ -5,7 +5,7 @@
   // document title
   title: "Canyon",
   // document subtitle
-  subtitle: "A Versatile Book Template",
+  subtitle: "A Book Template for End User in Full Control",
   // author
   author: "Some Author",
   // author, abbreviated
