@@ -1,4 +1,6 @@
 #import "CONFIG.typ": CONFIG, scaled, resized
+#import "/RES/cover.b64.typ": cover
+#import "/RES/chimg.b64.typ": chimg
 
 // Top-level element settings
 // --------------------------
@@ -30,12 +32,12 @@
 
 // half-title (book cover) page
 #ELEM.page.insert("half-title", ELEM.page.blank + (
-  background: image("/RES/cover.png", width: 100%),
+  background: image(cover, width: 100%),
 ))
 
 // title page
 #ELEM.page.insert("title", ELEM.page.blank + (
-  background: image("../RES/chimg.png", width: 100%),
+  background: image(chimg, width: 100%),
 ))
 
 // blanket page
@@ -51,7 +53,7 @@
 
 // chapter heading page
 #ELEM.page.insert("chapter", ELEM.page.blanket + (
-  background: image("../RES/chimg.png", width: 100%),
+  background: image(chimg, width: 100%),
   numbering: "1",
 ))
 
