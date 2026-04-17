@@ -15,9 +15,9 @@ book _stencil_ that users can freely edit and adapt, with:
 - Full _separation of concepts_ for (i) metadata, (ii) configuration, (iii) elements, (iv)
   layout, and (v) contents.
 
-Therefore, canyon users have access to _all_ document settings—such as: metadata, configuration,
-elements—as if they had manually started writing the document from scratch on their own (except
-they hadn't!—and thus have _full access to everything typst_ in that project.
+Therefore, canyon users have access to _all_ document settings as if they had manually started
+writing the document from scratch on their own—except they hadn't!—and thus have _full access to
+everything typst_ in that project.
 
 ## Overview
 
