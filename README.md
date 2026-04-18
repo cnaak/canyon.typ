@@ -96,6 +96,6 @@ canyon-package:
   title: "Canyon: A Book Template That Puts You in Full Control"
   url: https://github.com/cnaak/canyon.typ
   version: 0.1.0
-  date: 2026-04-16
+  date: 2026-04-17
 ```
 
