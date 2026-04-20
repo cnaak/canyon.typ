@@ -150,6 +150,9 @@ their simplicity, shallow learning curve, and perceived effectivity:
 - Being up and running for _content_ `2-BODY/<chapters>` creation and adaptation;
 - Simply adjust book front- (`1-FRONT/<sections>`) and back- (`3-BACK/<sections>`) matter _contents_.
 
+The scope of the `META` dictionary defined in `SETUP/META.typ` is the entire book, and includes, as of #pkg-ver the `title`, `subtitle`, `author`, `auth`, `address`, `description`, `date`, and
+`keywords` entries.
+
 The end-result will look like the thumbnail except with your personalized artwork, metadata,
 contents, and general front- and back-matter portions.
 
@@ -159,7 +162,7 @@ contents, and general front- and back-matter portions.
 - Quickly setting _general document configurations_ on `SETUP/CONFIG.typ`;
 - Editing `__setup.typ` files in the `1-FRONT`, `2-BODY`, and `3-BACK` template stencil directories to more finely control how the corresponding _broad book_ sections are displayed.
 
-The end-result will have custom language/paper/sections/text size/fonts and broad color scheme.
+This workflow end-result will improve upon the Basic one by setting custom language, paper, book matter sections, text size, fonts, and broad color scheme.
 
 
 /*
