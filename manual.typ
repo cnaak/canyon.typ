@@ -164,7 +164,7 @@ This workflow end-result improves upon the Basic one by setting custom language,
 - Editing `SETUP/ELEMENTS.typ` for fine-grained element _customizations_ such as: (i) the set of typst native `page`, `par`, `text`, and `block` elements; and (ii) custom `canyon` elemens, such as: `exhibit` (for code listings, examples, etc.), and `problem` (for textbooks); or even (iii) creating your own custom element types;
 
 The scope of the `ELEM` dictionary defined in `SETUP/ELEMENTS.typ` is _various pre-defined book elements_, and includes, as of #pkg-ver, native #typst() _elements_ such as: `page`, `par`,
-`text`, and `block`---meaning a _plurality_ of _custom_ {`page`, `par`, `text`, and `block`} setting definitions.
+`text`, and `block`---meaning a _plurality_ of _custom_ {`page`, `par`, `text`, and `block`}-setting definitions.
 
 These were designed to be _fully generic_, thus accepting _all valid_ named parameter definitions as these native #typst() elements can accept---not just a subset thereof---owing to the way
 this information is used in conjunction with #typst()'s spreading (`..`) operator on dictionaries as illustrated on @fig:ELEM.page.half-title.
