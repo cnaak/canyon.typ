@@ -44,18 +44,25 @@ A _selection_ of canyon book pages using default settings are grouped in the thu
 
 ## Suggested Canyon Workflows
 
-Owing to its full customization and separation of concepts approach, canyon enables simple
-book-writing workflows, which can be as basic as:
+End users are free to adopt any book-writing worflow as they see fit (or even adapt the stencil
+to something else, as a manual); however, the following ones are suggested as a quick start, for
+their simplicity, shallow learning curve, and perceived effectivity:
 
-### The Basic (i) Metadata and (v) Contents
 
-*Workflow:*
+### The Basic Workflow: Metadata and Contents
 
 - Quickly editing `SETUP/META.typ` for document _metadata_;
 - Replacing the image placeholders on `SETUP/ELEMENTS.typ` with your actual cover/chapter art `RES/<images>`;
-- Being up and running for book content `2-BODY/<chapters>` creation and adaptation.
+- Being up and running for _content_ `2-BODY/<chapters>` creation and adaptation;
+- Simply adjust book front- (`1-FRONT/<sections>`) and back- (`3-BACK/<sections>`) matter _contents_.
 
-The end-result will look like the thumbnail with your artwork, metadata, and contents.
+The scope of the `META` dictionary defined in `SETUP/META.typ` is the entire book, and includes,
+as of #pkg-ver the `title`, `subtitle`, `author`, `auth`, `address`, `description`, `date`, and
+`keywords` entries.
+
+This workflow end-result will look like the above thumbnail except with your personalized
+artwork, metadata, contents, and general front- and back-matter portions.
+
 
 ### Including General (ii) Configuration
 
