@@ -40,7 +40,7 @@ Out-of-the-box canyon books come with the following:
 
 A _selection_ of canyon book pages using default settings are grouped in the thumbnail below:
 
-![Selection of canyon pages thumbnail](https://raw.githubusercontent.com/cnaak/canyon.typ/refs/heads/dev/thumbnail.png)
+![Ordered subset of canyon pages: sample (i) front-matter: half-title, title, contents, and preface; (ii) book body; and (iii) back-matter pages](https://raw.githubusercontent.com/cnaak/canyon.typ/refs/heads/dev/thumbnail.png)
 
 ## Suggested Canyon Workflows
 
