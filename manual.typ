@@ -132,7 +132,7 @@ The numbered `1-FRONT`, `2-BODY`, and `3-BACK` directories are for (i)~front, (i
 
 = Suggested Canyon Workflows
 
-End users are free to adopt any book-writing worflow as they see fit (or even adapt the stencil to something else, as a manual); however, the following ones are suggested as a quick start, for
+End users are free to adopt any book-writing workflow as they see fit (or even adapt the stencil to something else, as a manual); however, the following ones are suggested as a quick start, for
 their simplicity, shallow learning curve, and perceived effectivity:
 
 == The Basic Workflow: Metadata and Contents
