@@ -82,9 +82,9 @@ matter sections, text size, fonts, and broad color scheme.
 - Editing `SETUP/ELEMENTS.typ` for fine-grained element _customizations_ such as: (i) the set of typst native `page`, `par`, `text`, and `block` elements; and (ii) custom `canyon` elemens, such as: `exhibit` (for code listings, examples, etc.), and `problem` (for textbooks); or even (iii) creating your own custom element types;
 
 The scope of the `ELEM` dictionary defined in `SETUP/ELEMENTS.typ` is _various pre-defined book elements_, and includes, as of `canyon-0.1.0`, native Typst _elements_ such as: `page`, `par`,
-`text`, and `block`---meaning a _plurality_ of _custom_ {`page`, `par`, `text`, and `block`} setting definitions.
+`text`, and `block`—meaning a _plurality_ of _custom_ {`page`, `par`, `text`, and `block`} setting definitions.
 
-These were designed to be _fully generic_, thus accepting _all valid_ named parameter definitions as these native Typst elements can accept---not just a subset thereof---owing to the way
+These were designed to be _fully generic_, thus accepting _all valid_ named parameter definitions as these native Typst elements can accept—not just a subset thereof—owing to the way
 this information is used in conjunction with Typst's spreading (`..`) operator on dictionaries as illustrated in the Manual.
 
 This workflow end-result improves upon the Configuration by allowing for _a highly customized book_, than can bear little to no resemblance to the default canyon book style, hopefully achieved
