@@ -97,12 +97,69 @@ Out-of-the-box canyon books come with the following:
 A _selection_ of canyon book pages using default settings are grouped in the thumbnail below:
 
 #figure(
-  caption: "Selection of canyon pages, showing, in order: (i)\u{A0}the half-title and (ii)\u{A0}title pages, (iii)\u{A0}contents, (iv)\u{A0}preface\u{2014}as book front-matter\u{2014}as well as sample (v)\u{A0}book body and (vi)\u{A0}back-matter pages",
+  caption: "Ordered subset of canyon pages: sample (i) front-matter: half-title, title, contents, and preface; (ii) book body; and (iii) back-matter pages",
 )[
   #image("thumbnail.png", width: 50%)
 ]
 
+== Stencil Overview
 
+The stencil tree delivered to the end used upon template instantiation---either through creating
+a new document from template in `typst.app`, or through the `typst init` command line on a
+shell---is shown on @fig:stencil-tree:
+
+#figure(
+  caption: "Canyon stencil level-1 tree. Entries followed by a slash are directories.",
+  box(
+    width: 100%,
+    inset: 1em,
+    radius: 1em,
+    fill: gray.mix(white),
+    stroke: 0.6pt + black,
+  )[
+  #set align(left)
+``` 
+$ tree -L1F
+./
+|-- 1-FRONT/
+|-- 2-BODY/
+|-- 3-BACK/
+|-- canyon.typ
+|-- RES/
+`-- SETUP/
+```
+  ]
+) <fig:stencil-tree>
+
+The numbered `1-FRONT`, `2-BODY`, and `3-BACK` directories are for (i)~front, (ii)~body, and
+(iii)~back-matter book sections---the numbering is to maintain sorting order, specifically on
+`typst.app` files environvent---the `RES` dir is for document resource files---figures,
+bibliography, etc.---, and the `SETUP` dir is for document-wide metadata and settings, as well
+as for 3rd-party package settings.
+
+= Suggested Canyon Workflows
+
+End users are free to adopt any book-writing worflow as they see fit (or even adapt the stencil
+to something else, as a manual); however, the following ones are suggested as a quick start, for
+their simplicity, shallow learning curve, and perceived effectivity:
+
+== The Basic Workflow: Metadata and Contents
+
+- Quickly editing `SETUP/META.typ` for document _metadata_;
+- Replacing the image placeholders on `SETUP/ELEMENTS.typ` with your actual cover/chapter art `RES/<images>`;
+- Being up and running for _content_ `2-BODY/<chapters>` creation and adaptation;
+- Simply adjust book front- (`1-FRONT/<sections>`) and back- (`3-BACK/<sections>`) matter _contents_.
+
+The end-result will look like the thumbnail except with your personalized artwork, metadata,
+contents, and general front- and back-matter portions.
+
+== The Configuration Workflow: General Settings
+
+- All the Basic workflow with:
+- Quickly setting _general document configurations_ on `SETUP/CONFIG.typ`;
+- Editing `__setup.typ` files in the `1-FRONT`, `2-BODY`, and `3-BACK` template stencil directories to more finely control how the corresponding _broad book_ sections are displayed.
+
+The end-result will have custom language/paper/sections/text size/fonts and broad color scheme.
 
 
 /*
