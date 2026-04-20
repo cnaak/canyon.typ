@@ -19,6 +19,8 @@ Therefore, canyon users have access to _all_ document settings as if they had ma
 writing the document from scratch on their own—except they hadn't!—and thus have _full access to
 everything typst_ in that project.
 
+For additional info, please, check the [Manual](manual.pdf).
+
 ## Overview
 
 Out-of-the-box canyon books come with the following:
@@ -85,7 +87,7 @@ The scope of the `ELEM` dictionary defined in `SETUP/ELEMENTS.typ` is _various p
 `text`, and `block`—meaning a _plurality_ of _custom_ {`page`, `par`, `text`, and `block`}-setting definitions.
 
 These were designed to be _fully generic_, thus accepting _all valid_ named parameter definitions as these native Typst elements can accept—not just a subset thereof—owing to the way
-this information is used in conjunction with Typst's spreading (`..`) operator on dictionaries as illustrated in the Manual.
+this information is used in conjunction with Typst's spreading (`..`) operator on dictionaries as illustrated in the [Manual](manual.pdf).
 
 This workflow end-result improves upon the Configuration by allowing for _a highly customized book_, than can bear little to no resemblance to the default canyon book style, hopefully achieved
 without too much pain for the end user.
