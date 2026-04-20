@@ -1,6 +1,6 @@
 #import "@preview/tidy:0.4.3": *
 
-#set page(paper: "ustrade", margin: 0.75in)
+#set page(paper: "us-trade", margin: 0.75in)
 #set par(justify: true)
 #set text(font: "Libertinus Serif", size: 10pt)
 
@@ -51,6 +51,59 @@
   )
 ]
 #v(1em)
+
+#import "@preview/untypsignia:0.1.1": *
+
+#let typst() = [#text(font: "Buenard", hyphenate: false)[#typstmark()]]
+
+= Canyon's End User in Full Control Approach
+
+Mainstream #typst() templates are written so as to bring functionality and to be used in an
+`#import` then `#show` workflow; however, that frequently comes at the cost of introducing (i)
+new syntax and (ii) opaque template-side code and settings.
+
+Any template end user that had the need to customize things not anticipated or provided for by
+the template's author have experienced this shortcoming.
+
+Canyon (`canyon-0.1.0`) explores a different approach in which a new canyon-based document is a
+book _stencil_ that users can freely edit and adapt, with:
+
+- _No_ opaque template-side code or settings;
+- _No_ canyon `#import` statements;
+- _No_ canyon-specialized `#show` rules;
+- _Full access_ to the entire #typst() project;
+- The _familiar_ #typst() syntax to work with; and
+- Full _separation of concepts_ for (i) metadata, (ii) configuration, (iii) elements, (iv)
+  layout, and (v) contents.
+
+Therefore, canyon users have access to _all_ document settings as if they had manually started
+writing the document from scratch on their own---except they hadn't!---and thus have _full
+access_ to everything #typst() in that project.
+
+= Overview
+
+Out-of-the-box canyon books come with the following:
+
++ (i) Front-matter; (ii) Body; and (iii) Back-matter book structure;
++ (i) Cover page, and (ii) numbered Chapter page images;
++ All `#set` and `#show` rules are accessible; hence, customizable;
++ The "openright" chapter pagination—through `#pagebreak(to: "odd")`;
++ Front-matter with Title pages; Credits; Contents; List of Figures, Tables, Equations, and Exhibits; and a Preface;
++ Book body with regular Chapters (single Part);
++ Back-matter with Appendix, Bibliography, Glossary, Index, and Discalimers;
++ Figures, Tables, Exhibits, Problems, and Equations are Chapter-numbered: `1.1` instead of `1`, with configurable separators by type _group_, i.e., a separate one for:  (i) Equations, (ii) Figures and Tables, (iii) Exhibits, and (iv) Problems;
++ A simple and configurable 3-color system with: (i) a thematic color (default: _dark indigo_), (ii) a page background color (default: _light sepia_), and (iii) a cover text color (default: _dark indigo_).
+
+A _selection_ of canyon book pages using default settings are grouped in the thumbnail below:
+
+#figure(
+  caption: "Selection of canyon pages, showing, in order: (i)\u{A0}the half-title and (ii)\u{A0}title pages, (iii)\u{A0}contents, (iv)\u{A0}preface\u{2014}as book front-matter\u{2014}as well as sample (v)\u{A0}book body and (vi)\u{A0}back-matter pages",
+)[
+  #image("thumbnail.png", width: 50%)
+]
+
+
+
 
 /*
 = Package Self Documentation
