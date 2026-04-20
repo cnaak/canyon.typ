@@ -40,7 +40,7 @@
 #title()
 
 #align(center)[#grid(
-    columns: (40%),
+    columns: (60%),
     align(center)[
       #set text(size: 0.8em)
       C. Naaktgeboren \
@@ -62,7 +62,7 @@ syntax and (ii) opaque template-side code and settings.
 
 Any template end user that had the need to customize things not anticipated or provided for by the template's author have experienced this shortcoming.
 
-Canyon (`canyon-0.1.0`) explores a different approach in which a new canyon-based document is a book _stencil_ that users can freely edit and adapt, with:
+Canyon (`canyon-0.1.1`) explores a different approach in which a new canyon-based document is a book _stencil_ that users can freely edit and adapt, with:
 
 - _No_ opaque template-side code or settings;
 - _No_ canyon `#import` statements;
@@ -214,10 +214,6 @@ without too much pain for the end user.
   ]
 ) <fig:ELEM.page.half-title>
 
-= Release Summary
-
-- `0.1.0` - initial release
-
 = Citing
 
 This package can be cited with the following bibliography database entry:
@@ -236,7 +232,7 @@ canyon-package:
   author: Naaktgeboren, C.
   title: "Canyon: A Book Template That Puts You in Full Control"
   url: https://github.com/cnaak/canyon.typ
-  version: 0.1.0
+  version: 0.1.1
   date: 2026-04-17
 ```
 ]
