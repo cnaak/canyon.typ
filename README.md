@@ -95,7 +95,7 @@ without too much pain for the end user.
 ## Release Summary
 
 - `0.1.0` - initial release
-- `0.1.1` - added the Manual
+- `0.1.1` - added the [Manual](manual.pdf)
 
 ## Citing
 
