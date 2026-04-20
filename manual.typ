@@ -160,7 +160,7 @@ This workflow end-result improves upon the Basic one by setting custom language,
 
 == The Fine-Grained Workflow: Element and Layout
 
-- General configuration workflow with:
+- All the Configuration workflow with:
 - Editing `SETUP/ELEMENTS.typ` for fine-grained element _customizations_ such as: (i) the set of typst native `page`, `par`, `text`, and `block` elements; and (ii) custom `canyon` elemens, such as: `exhibit` (for code listings, examples, etc.), and `problem` (for textbooks); or even (iii) creating your own custom element types;
 
 The scope of the `ELEM` dictionary defined in `SETUP/ELEMENTS.typ` is _various pre-defined book elements_, and includes, as of #pkg-ver, native #typst() _elements_ such as: `page`, `par`,
