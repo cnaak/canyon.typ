@@ -57,36 +57,38 @@ their simplicity, shallow learning curve, and perceived effectivity:
 - Simply adjust book front- (`1-FRONT/<sections>`) and back- (`3-BACK/<sections>`) matter _contents_.
 
 The scope of the `META` dictionary defined in `SETUP/META.typ` is the entire book, and includes,
-as of #pkg-ver the `title`, `subtitle`, `author`, `auth`, `address`, `description`, `date`, and
+as of `canyon-0.1.0` the `title`, `subtitle`, `author`, `auth`, `address`, `description`, `date`, and
 `keywords` entries.
 
 This workflow end-result will look like the above thumbnail except with your personalized
 artwork, metadata, contents, and general front- and back-matter portions.
 
+### The Configuration Workflow: General Settings
 
-### Including General (ii) Configuration
+- All the Basic workflow with:
+- Quickly setting _general document configurations_ on `SETUP/CONFIG.typ`;
+- Editing `__setup.typ` files in the `1-FRONT`, `2-BODY`, and `3-BACK` template stencil directories to more finely control how the corresponding _broad book_ sections are displayed.
 
-*Workflow:*
+The scope of the `CONFIG` dictionary defined in `SETUP/CONFIG.typ` is _main book settings_, and
+includes, as of `canyon-0.1.0` the main `lang`, `paper`, `size`, `font`s, `color`s, and `num-sep`s,
+i.e., reference chapter-to-item number separarators, as the `–` in "Problem 1–1", for instance.
 
-- Basic workflow with:
-- Quickly setting general document _configurations_ on `SETUP/CONFIG.typ`;
-- Editing `__setup.typ` files in the `1-FRONT`, `2-BODY`, and `3-BACK` template stencil
-  directories to finely control how these broad book sections components are displayed.
+This workflow end-result improves upon the Basic one by setting custom language, paper, book
+matter sections, text size, fonts, and broad color scheme.
 
-The end-result will have custom language/paper/sections/text size/fonts and broad color scheme.
-
-### Including Fine-Grained (iii) Element and (iv) Layout Customizations:
-
-*Workflow:*
+### The Fine-Grained Workflow: Element and Layout
 
 - General configuration workflow with:
-- Editing `SETUP/ELEMENTS.typ` for fine-grained element _customizations_ such as: (i) the set of
-  typst native `page`, `par`, `text`, and `block` elements; and (ii) custom `canyon` elemens,
-  such as: `exhibit` (for code listings, examples, etc.), and `problem` (for textbooks); or even
-  (iii) creating your own custom element types;
+- Editing `SETUP/ELEMENTS.typ` for fine-grained element _customizations_ such as: (i) the set of typst native `page`, `par`, `text`, and `block` elements; and (ii) custom `canyon` elemens, such as: `exhibit` (for code listings, examples, etc.), and `problem` (for textbooks); or even (iii) creating your own custom element types;
 
-The end-result can be a highly customized book, than can bear little resemblance to the default
-canyon book style, hopefully achieved without too much pain.
+The scope of the `ELEM` dictionary defined in `SETUP/ELEMENTS.typ` is _various pre-defined book elements_, and includes, as of `canyon-0.1.0`, native Typst _elements_ such as: `page`, `par`,
+`text`, and `block`---meaning a _plurality_ of _custom_ {`page`, `par`, `text`, and `block`} setting definitions.
+
+These were designed to be _fully generic_, thus accepting _all valid_ named parameter definitions as these native Typst elements can accept---not just a subset thereof---owing to the way
+this information is used in conjunction with Typst's spreading (`..`) operator on dictionaries as illustrated in the Manual.
+
+This workflow end-result improves upon the Configuration by allowing for _a highly customized book_, than can bear little to no resemblance to the default canyon book style, hopefully achieved
+without too much pain for the end user.
 
 ## Release Summary
 
