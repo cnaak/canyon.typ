@@ -99,7 +99,7 @@ A _selection_ of canyon book pages using default settings are grouped in the thu
 
 == Stencil Overview
 
-The stencil tree delivered to the end used upon template instantiation---either through creating a new document from template in `typst.app`, or through the `typst init` command line on a
+The stencil tree delivered to the end user upon template instantiation---either through creating a new document from template in `typst.app`, or through the `typst init` command line on a
 shell---is shown on @fig:stencil-tree:
 
 #figure(
@@ -130,7 +130,7 @@ The numbered `1-FRONT`, `2-BODY`, and `3-BACK` directories are for (i)~front, (i
 `typst.app` files environvent---the `RES` dir is for document resource files---figures, bibliography, etc.---, and the `SETUP` dir is for document-wide metadata and settings, as well as for
 3rd-party package settings.
 
-= Suggested Canyon Workflows
+= Suggested Canyon Workflows (Quick Start)
 
 End users are free to adopt any book-writing workflow as they see fit (or even adapt the stencil to something else, as a manual); however, the following ones are suggested as a quick start, for
 their simplicity, shallow learning curve, and perceived effectivity:
