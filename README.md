@@ -44,7 +44,7 @@ A _selection_ of canyon book pages using default settings are grouped in the thu
 
 ## Suggested Canyon Workflows
 
-End users are free to adopt any book-writing worflow as they see fit (or even adapt the stencil
+End users are free to adopt any book-writing workflow as they see fit (or even adapt the stencil
 to something else, as a manual); however, the following ones are suggested as a quick start, for
 their simplicity, shallow learning curve, and perceived effectivity:
 
