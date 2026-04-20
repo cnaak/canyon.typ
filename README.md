@@ -42,7 +42,7 @@ A _selection_ of canyon book pages using default settings are grouped in the thu
 
 ![Ordered subset of canyon pages: sample (i) front-matter: half-title, title, contents, and preface; (ii) book body; and (iii) back-matter pages](https://raw.githubusercontent.com/cnaak/canyon.typ/refs/heads/dev/thumbnail.png)
 
-## Suggested Canyon Workflows
+## Suggested Canyon Workflows (Quick Start)
 
 End users are free to adopt any book-writing workflow as they see fit (or even adapt the stencil
 to something else, as a manual); however, the following ones are suggested as a quick start, for
