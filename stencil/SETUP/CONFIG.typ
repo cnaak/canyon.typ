@@ -26,9 +26,9 @@
   ),
   color: (
     // theme - reserved for seldom use in key opaque elements
-    theme: color.hsv(240deg,  75%,  33%, 100%), // dark indigo,
+    theme: color.hsv(240deg,  33%,  33%, 100%), // dark indigo,
     // page - page backgroung, usually opaque sepia or white
-    pages: color.hsv( 50deg,  18%, 100%, 100%), // sepia
+    pages: color.hsv( 50deg,  15%, 100%, 100%), // sepia
     // cover - text foreground, adjust according to cover art
     cover: color.hsv(240deg,  75%,  33%, 100%), // dark indigo,
   ),
