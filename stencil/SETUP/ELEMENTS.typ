@@ -237,6 +237,14 @@
   width: 85%,
 ))
 
+#ELEM.block.insert("fullwidth", (
+  width: 100%,
+  inset: 0pt,
+  fill: none,
+  stroke: none,
+  breakable: true,
+))
+
 // New elements
 // ============
 
@@ -272,14 +280,6 @@
 
 // Problems
 // --------
-
-#ELEM.block.insert("problem", (
-  width: 92%,
-  inset: 0pt,
-  fill: none,
-  stroke: none,
-  breakable: true,
-))
 
 #let pro-count = counter("problem")
 
