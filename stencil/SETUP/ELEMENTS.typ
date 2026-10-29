@@ -285,17 +285,17 @@
 
 #let problem(body, id: "") = context [
   #figure([
-    #set align(top)
-    #stack(
-      dir: ltr,
-      block(width: 100% - ELEM.block.problem.width)[
+    #set align(left + top)
+    #grid(
+      columns: (10%, 90%),
+      block(..ELEM.block.fullwidth)[
         #let chp-count = counter(heading.where(level: 1)).at(here()).first()
         #let pro-count = counter("problem").get().at(0) + 1
         #set par(..ELEM.par.bare)
         #set text(..ELEM.text.serif)
         #text(weight: "black")[#chp-count#CONFIG.num-sep.pro#pro-count]
       ],
-      block(..ELEM.block.problem)[
+      block(..ELEM.block.fullwidth)[
         #set par(..ELEM.par.just)
         #set text(..ELEM.text.serif)
         #body
