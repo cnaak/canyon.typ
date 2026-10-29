@@ -1,4 +1,4 @@
-#import "../SETUP/ELEMENTS.typ": exhibit, problem, answer
+#import "../SETUP/ELEMENTS.typ": exhibit, problem, answer, example
 #import "../SETUP/USER.typ": *
 #import "@preview/glossarium:0.5.10": gls
 #import "@preview/in-dexter:0.7.2": index
@@ -14,7 +14,11 @@
 
 #math.equation(
   block: true,
-)[$"lorem" i #sym.harpoon "ipsum"$#index("Lorem", "Ipsum Equation")] <eqn:clone>
+)[$"lorem" i harpoon "ipsum"$#index("Lorem", "Ipsum Equation")] <eqn:clone>
+
+$
+I = integral_a^b f(x) dif x
+$
 
 According to @ipsum_book_1 @ipsum_book_2 @ipsum_journal, #gls("ipsum") @eqn:clone ...
 #lorem(12)
@@ -25,6 +29,37 @@ According to @ipsum_book_1 @ipsum_book_2 @ipsum_journal, #gls("ipsum") @eqn:clon
 
 @fig:thex ...
 #lorem(22)
+
+== Example
+
+#example()[
+  Solve
+
+  #math.equation(
+    block:true,
+    numbering: none
+  )[$
+    integral_1^2 f(x) dif x = integral_1^2 (dif x)/x
+  $]
+
+  *Solution*: The integrand has an analytical antiderivative:
+
+  #math.equation(
+    block:true,
+    numbering: none
+  )[$
+    F(x) = ln bar(x),
+  $]
+
+  #noind() therefore:
+
+  #math.equation(
+    block:true,
+    numbering: none
+  )[$
+    integral_1^2 (dif x)/x = ln bar(x)_1^2 = ln(2) - ln(1) = ln(2). quad quad lt.closed
+  $]
+]
 
 == Labore et Dolore
 
