@@ -226,6 +226,11 @@
   // Keep adding? Is it really needed?
 ))
 
+#ELEM.text.insert("example", ELEM.text.sans + (
+  fill: black.lighten(50%),
+  size: resized(-2),
+))
+
 // Block elements
 // --------------
 
@@ -323,4 +328,24 @@
     #text(..ELEM.text.answer)[Answer: #body]
   ]
   v(+0.25em)
+}
+
+// Examples
+// --------
+
+#ELEM.block.insert("example", (
+  width: 100%,
+  inset: 8pt,
+  radius: 0pt,
+  fill: none,
+  stroke: 0.5pt + gray.lighten(50%),
+  breakable: true,
+))
+
+#let example(
+  body,
+) = {
+  set par(..ELEM.par.just)
+  set text(..ELEM.text.example)
+  block(..ELEM.block.example)[#body]
 }
