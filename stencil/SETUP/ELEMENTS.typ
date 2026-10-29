@@ -1,4 +1,4 @@
-#import "CONFIG.typ": CONFIG, scaled, resized
+0import "CONFIG.typ": CONFIG, scaled, resized
 #import "/RES/cover.b64.typ": cover
 #import "/RES/chimg.b64.typ": chimg
 
@@ -173,13 +173,13 @@
   // larger than normal by 6 notches ×(∜2⁶ ~ 283%)
   size: resized(+7),
   weight: "black",
-  fill: CONFIG.color.cover.darken(40%),
+  fill: CONFIG.color.cover,//.darken(40%),
   hyphenate: false,
 ))
 
 #ELEM.text.insert("title", ELEM.text.half-title + (
   weight: "extrabold",
-  fill: CONFIG.color.theme.darken(40%),
+  fill: CONFIG.color.theme,//.darken(40%),
 ))
 
 #ELEM.text.insert("heading", (
