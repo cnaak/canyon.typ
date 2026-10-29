@@ -53,7 +53,7 @@
     #set text(..ELEM.text.heading.at(0))
     #box(
       inset: (x: 2em, y: 1.5em),
-      fill: luma(192).transparentize(75%),
+      fill: luma(160).transparentize(75%),
       radius: 1em
     )[#it.supplement #counter(heading).get().at(0)]
     #v(5mm)
@@ -83,8 +83,8 @@
     #set align(center)
     #set text(..ELEM.text.heading.at(0))
     #box(
-      inset: 2em,
-      fill: rgb(0, 0, 4, 96),
+      inset: (x: 2em, y: 1.5em),
+      fill: luma(160).transparentize(75%),
       radius: 1em
     )[#it.supplement #counter(heading).display("A")]
     #v(5mm)
