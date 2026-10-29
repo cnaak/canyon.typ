@@ -171,36 +171,36 @@
 
 #ELEM.text.insert("half-title", ELEM.text.serif + (
   // larger than normal by 6 notches ×(∜2⁶ ~ 283%)
-  size: resized(+7),
+  size: resized(+6),
   weight: "black",
-  fill: CONFIG.color.cover.darken(40%),
+  fill: CONFIG.color.cover,//.darken(40%),
   hyphenate: false,
 ))
 
 #ELEM.text.insert("title", ELEM.text.half-title + (
   weight: "extrabold",
-  fill: CONFIG.color.theme.darken(40%),
+  fill: CONFIG.color.theme,//.darken(40%),
 ))
 
 #ELEM.text.insert("heading", (
   // ELEM.text.heading.at(0) - displayed level 1
   ELEM.text.half-title + (
-    size: resized(+6),
-    fill: CONFIG.color.theme.darken(40%),
+    size: resized(+5.5),
+    fill: CONFIG.color.theme,//.darken(40%),
     hyphenate: false,
   ),
   // ELEM.text.heading.at(1)
   ELEM.text.serif + (
     // twice larger than normal
     size: resized(+4),
-    fill: CONFIG.color.theme.darken(40%),
+    fill: CONFIG.color.theme,//.darken(40%),
     weight: "black",
     hyphenate: false,
   ),
   // ELEM.text.heading.at(2)
-  ELEM.text.serif + (
-    // larger than normal by 1 short notch ×(∜2 ~ 119%)
-    size: resized(+1),
+  ELEM.text.sans + (
+    // larger than normal by 0.5 short notch ×(√∜2 ~ 109%)
+    size: resized(+0.5),
     // Seldomly applying color theme
     fill: CONFIG.color.theme,
     weight: "black",
@@ -226,6 +226,11 @@
   // Keep adding? Is it really needed?
 ))
 
+#ELEM.text.insert("example", ELEM.text.sans + (
+  fill: black.lighten(50%),
+  size: resized(-2),
+))
+
 // Block elements
 // --------------
 
@@ -235,6 +240,14 @@
 
 #ELEM.block.insert("title", (
   width: 85%,
+))
+
+#ELEM.block.insert("fullwidth", (
+  width: 100%,
+  inset: 0pt,
+  fill: none,
+  stroke: none,
+  breakable: true,
 ))
 
 // New elements
@@ -247,7 +260,7 @@
   width: 100%,
   inset: 8pt,
   radius: 8pt,
-  fill: color.mix((CONFIG.color.theme, 33%), white),
+  fill: CONFIG.color.theme.lighten(75%).transparentize(75%),
   stroke: 0.6pt + black,
   breakable: true,
 ))
@@ -273,29 +286,21 @@
 // Problems
 // --------
 
-#ELEM.block.insert("problem", (
-  width: 92%,
-  inset: 0pt,
-  fill: none,
-  stroke: none,
-  breakable: true,
-))
-
 #let pro-count = counter("problem")
 
 #let problem(body, id: "") = context [
   #figure([
-    #set align(top)
-    #stack(
-      dir: ltr,
-      block(width: 100% - ELEM.block.problem.width)[
+    #set align(left + top)
+    #grid(
+      columns: (10%, 90%),
+      block(..ELEM.block.fullwidth)[
         #let chp-count = counter(heading.where(level: 1)).at(here()).first()
         #let pro-count = counter("problem").get().at(0) + 1
         #set par(..ELEM.par.bare)
         #set text(..ELEM.text.serif)
         #text(weight: "black")[#chp-count#CONFIG.num-sep.pro#pro-count]
       ],
-      block(..ELEM.block.problem)[
+      block(..ELEM.block.fullwidth)[
         #set par(..ELEM.par.just)
         #set text(..ELEM.text.serif)
         #body
@@ -323,4 +328,24 @@
     #text(..ELEM.text.answer)[Answer: #body]
   ]
   v(+0.25em)
+}
+
+// Examples
+// --------
+
+#ELEM.block.insert("example", (
+  width: 100%,
+  inset: 8pt,
+  radius: 0pt,
+  fill: none,
+  stroke: 0.5pt + gray.lighten(50%),
+  breakable: true,
+))
+
+#let example(
+  body,
+) = {
+  set par(..ELEM.par.just)
+  set text(..ELEM.text.example)
+  block(..ELEM.block.example)[#body]
 }
