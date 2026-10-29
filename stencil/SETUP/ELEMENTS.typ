@@ -260,7 +260,7 @@
   width: 100%,
   inset: 8pt,
   radius: 8pt,
-  fill: color.mix((CONFIG.color.theme, 33%), white),
+  fill: CONFIG.color.theme.lighten(75%).transparentize(75%),
   stroke: 0.6pt + black,
   breakable: true,
 ))
