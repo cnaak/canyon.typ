@@ -136,11 +136,10 @@
 
 // Show rules - figures
 #show figure.caption: set par(justify: true)
-#show figure.caption: it => context stack(
-  dir: ltr,
-  strong[#it.supplement #it.counter.display()~--~],
-  it.body,
-)
+#show figure.caption: it => context {
+  text(..ELEM.text.capcall)[#it.supplement #it.counter.display()~--~]
+  text(..ELEM.text.caption)[#it.body]
+}
 
 // Figure show rules by figure kind
 #show figure.where(
