@@ -1,4 +1,4 @@
-0import "CONFIG.typ": CONFIG, scaled, resized
+#import "CONFIG.typ": CONFIG, scaled, resized
 #import "/RES/cover.b64.typ": cover
 #import "/RES/chimg.b64.typ": chimg
 
