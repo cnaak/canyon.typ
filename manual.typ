@@ -96,8 +96,8 @@ Out-of-the-box canyon books come with the following:
 A _selection_ of canyon book pages using default settings are grouped in the thumbnail below:
 
 #figure(
-  caption: "Ordered subset of canyon pages: sample (i) front-matter: half-title, title,
-  contents, and preface; (ii) book body; and (iii) back-matter pages",
+  caption: [Ordered subset of canyon pages: sample (i) front-matter: half-title, title,
+  contents, and preface; (ii) book body; and (iii) back-matter pages],
 )[
   #image("thumbnail.png", width: 50%)
 ] <fig:thumbnail>
@@ -109,7 +109,7 @@ a new document from template in `typst.app`, or through the `typst init` command
 shell---is shown on @fig:stencil-tree:
 
 #figure(
-  caption: "Canyon stencil level-1 tree. Entries followed by a slash are directories.",
+  caption: [Canyon stencil level-1 tree. Entries followed by a slash are directories],
   box(
     width: 100%,
     inset: 1em,
@@ -193,8 +193,8 @@ book_, than can bear little to no resemblance to the default canyon book style, 
 achieved without too much pain for the end user.
 
 #figure(
-  caption: "Sample canyon element definition and usage design, highlighting its expressiveness
-  and full versatility",
+  caption: [Sample canyon element definition and usage design, highlighting its expressiveness
+  and full versatility],
   box(
     width: 100%,
     inset: 1em,
@@ -256,7 +256,7 @@ canyon-package:
   author: Naaktgeboren, C.
   title: "Canyon: A Book Template That Puts You in Full Control"
   url: https://github.com/cnaak/canyon.typ
-  version: 0.2.0
+  version: 0.2.1
   date: 2026-10-29
 ```
 ]
