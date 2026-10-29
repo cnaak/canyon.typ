@@ -33,7 +33,7 @@
     #box(
       width: 100%,
       inset: (x: 1em, y: 1.66em),
-      fill: gray.transparentize(25%),
+      fill: luma(192).transparentize(25%),
     )[#text(..ELEM.text.heading.at(1))[#it]]
   ]
   v(15mm)
@@ -53,7 +53,7 @@
     #set text(..ELEM.text.heading.at(0))
     #box(
       inset: (x: 2em, y: 1.5em),
-      fill: black.transparentize(75%),
+      fill: luma(192).transparentize(75%),
       radius: 1em
     )[#it.supplement #counter(heading).get().at(0)]
     #v(5mm)
@@ -62,12 +62,12 @@
     #set align(left)
     #set par(..ELEM.par.bare)
     #set text(..ELEM.text.normal)
-    #line(length: 100%, stroke: 0.6pt + black)
+    #line(length: 100%, stroke: 0.5pt + black)
     #suboutline(
       title: none,
       depth: 1,
     )
-    #line(length: 100%, stroke: 0.6pt + black)
+    #line(length: 100%, stroke: 0.5pt + black)
   ]
 }
 
@@ -93,12 +93,12 @@
     #set align(left)
     #set par(..ELEM.par.bare)
     #set text(..ELEM.text.normal)
-    #line(length: 100%, stroke: 0.6pt + black)
+    #line(length: 100%, stroke: 0.5pt + black)
     #suboutline(
       title: none,
       depth: 1,
     )
-    #line(length: 100%, stroke: 0.6pt + black)
+    #line(length: 100%, stroke: 0.5pt + black)
   ]
 }
 
