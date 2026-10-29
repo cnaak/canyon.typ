@@ -186,21 +186,21 @@
   // ELEM.text.heading.at(0) - displayed level 1
   ELEM.text.half-title + (
     size: resized(+6),
-    fill: CONFIG.color.theme.darken(40%),
+    fill: CONFIG.color.theme,//.darken(40%),
     hyphenate: false,
   ),
   // ELEM.text.heading.at(1)
   ELEM.text.serif + (
     // twice larger than normal
     size: resized(+4),
-    fill: CONFIG.color.theme.darken(40%),
+    fill: CONFIG.color.theme,//.darken(40%),
     weight: "black",
     hyphenate: false,
   ),
   // ELEM.text.heading.at(2)
-  ELEM.text.serif + (
-    // larger than normal by 1 short notch ×(∜2 ~ 119%)
-    size: resized(+1),
+  ELEM.text.sans + (
+    // larger than normal by 0.5 short notch ×(√∜2 ~ 109%)
+    size: resized(+0.5),
     // Seldomly applying color theme
     fill: CONFIG.color.theme,
     weight: "black",
