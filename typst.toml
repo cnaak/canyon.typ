@@ -1,6 +1,6 @@
 [package]
 name = "canyon"
-version = "0.1.1"
+version = "0.2.0"
 entrypoint = "lib.typ"
 authors = ["Naaktgeboren, C.", ]
 license = "MIT"
@@ -20,7 +20,7 @@ keywords = [
 ]
 categories = ["layout", "book"]
 disciplines = []
-compiler = "0.14.0"
+compiler = "0.15.1"
 exclude = []
 
 [template]
