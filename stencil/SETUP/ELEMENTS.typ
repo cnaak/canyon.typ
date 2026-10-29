@@ -130,11 +130,6 @@
   hyphenate: true,
 ))
 
-#ELEM.text.insert("caption", ELEM.text.normal + (
-  // smaller than normal by 1 short notch ÷(∜2) ~ ×(84%)
-  size: resized(-1),
-))
-
 #ELEM.text.insert("footnote", (
   mark: ELEM.text.lang + (
     font: CONFIG.font.details,
@@ -169,9 +164,19 @@
   font: CONFIG.font.sans,
 ))
 
+#ELEM.text.insert("caption", ELEM.text.sans + (
+  // smaller than normal by 1 short notch ÷(∜2) ~ ×(84%)
+  size: resized(-1),
+))
+
+#ELEM.text.insert("capcall", ELEM.text.caption + (
+  // smaller than normal by 1 short notch ÷(∜2) ~ ×(84%)
+  weight: "bold",
+))
+
 #ELEM.text.insert("half-title", ELEM.text.serif + (
   // larger than normal by 6 notches ×(∜2⁶ ~ 283%)
-  size: resized(+6),
+  size: resized(+5.5),
   weight: "black",
   fill: CONFIG.color.cover,//.darken(40%),
   hyphenate: false,
@@ -185,7 +190,7 @@
 #ELEM.text.insert("heading", (
   // ELEM.text.heading.at(0) - displayed level 1
   ELEM.text.half-title + (
-    size: resized(+5.5),
+    size: resized(+6),
     fill: CONFIG.color.theme,//.darken(40%),
     hyphenate: false,
   ),
@@ -245,6 +250,7 @@
 #ELEM.block.insert("fullwidth", (
   width: 100%,
   inset: 0pt,
+  radius: 0pt,
   fill: none,
   stroke: none,
   breakable: true,
