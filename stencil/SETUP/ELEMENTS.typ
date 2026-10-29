@@ -171,7 +171,7 @@
 
 #ELEM.text.insert("half-title", ELEM.text.serif + (
   // larger than normal by 6 notches ×(∜2⁶ ~ 283%)
-  size: resized(+7),
+  size: resized(+6),
   weight: "black",
   fill: CONFIG.color.cover,//.darken(40%),
   hyphenate: false,
@@ -185,7 +185,7 @@
 #ELEM.text.insert("heading", (
   // ELEM.text.heading.at(0) - displayed level 1
   ELEM.text.half-title + (
-    size: resized(+6),
+    size: resized(+5.5),
     fill: CONFIG.color.theme,//.darken(40%),
     hyphenate: false,
   ),
